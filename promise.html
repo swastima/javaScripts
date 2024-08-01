@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promise</title>
+</head>
+<body>
+    <div></div>
+    <script>
+        const students = [
+            {name:'swiss bhandari', age:28},
+            {name:'susan lawati', age:29},
+            {name:'saroj dahal', age:25}
+        ]
+        // define the function
+        const showStudent=()=>{
+            setTimeout(()=>{
+                let result= ""
+                students.forEach(info=>{
+                    result+=`<ul>
+                        <li> ${info.name}</li>
+                        </ul>`
+                })
+                document.querySelector('div').innerHTML=`${result}`
+            }, 5000)
+        }
+
+        // //call the function 
+        // showStudent()
+
+        // const addStudent=newdata=>{
+        //     setTimeout(()=>{
+        //         students.push(newdata)
+        //callback()
+        //     }, 6000)
+        // }
+
+        const addStudent=(newdata,callback)=>{
+            return Promise((resolve,reject)=>{
+                students.push(newdata)
+                const error =false
+                if(!error){
+                    resolve()
+                }else{
+                    reject("something is wrong")
+                }
+            })
+        }
+        // //call the function addStudent
+        addStudent({name:'bibesh gurung', age:30})
+        .then()
+        .catch()
+
+    </script>
+</body>
+</html>

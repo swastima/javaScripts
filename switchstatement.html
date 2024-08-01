@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch statement</title>
+</head>
+<body>
+    <script>
+        const user1='admin'
+        const user2='user'
+        const pin= 1234
+        const userpin =parseInt(prompt("enter a pin number"))
+
+        // switch(user=prompt('enter a username')){
+        //     case user1:
+        //         document.write("wlecome to admin dashboard")
+        //         break
+        //     case user2:
+        //         document.write("wlecome to user dashboard")
+        //         break
+        //     default:
+        //             document.write('invalid user')
+        // }
+
+        switch(userpin){
+            case pin:
+                const value = parseInt(prompt("welcome to atm service \n 1. Fast cash \n 2. withdraw \n 3.Bank balance \n 4.Cancel"))
+                switch(value){
+                    case 1:
+                        const fastvalue = parseInt(prompt("welcome to fast cash service \n 1.1000 \n 2.2000 \n 3.5000 \n 4.10000 \n"))
+                    switch(fastvalue){
+                        case 1:
+                            alert("here is your 1000 cash")
+                        case 2:
+                            alert("here is your 2000 cash")
+                        case 3:
+                            alert("here is your 5000 cash") 
+                        case 4:
+                            alert("here is your 10000 cash")   
+                    }
+                    case 2:
+                        const withdrawvalue=parseInt(prompt("welcome to withdraw section \n 1.enter your amount \n"))
+                    switch(withdrawvalue){
+                        case 1:
+                            alert("please collect your amount")
+                    }
+                }
+                break
+            default:
+                    alert("invalid pin")
+        }
+
+
+    </script>
+</body>
+</html>

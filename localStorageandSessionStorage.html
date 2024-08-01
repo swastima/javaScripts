@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2></h2>
+    <button class="btn">Remove</button>
+    <script>
+        localStorage.setItem('test','welcome to our class')
+        const data = localStorage.getItem('test')
+        console.log(data)
+
+        document.querySelector('.btn').addEventListener('click',()=>{
+            return localStorage.removeItem('test')
+        })
+        //JSON - Javascript Object Notation
+        const student={
+            'first_name':'Hari',
+            'last_name':'bhandri',
+            'subjects':['HTML','CSS','JAVASCRIPTS'],
+            'height':5.5,
+            'weight':55
+        }
+        localStorage.setItem('data',JSON.stringify(student))
+        //to convert JASON object into string
+
+        const test =JSON.parse(localStorage.getItem('data'))
+        console.log(test)
+        console.log(test.subjects[2])
+        console.log(test.first_name)
+        document.querySelector('h2').innerHTML=`${test.first_name}`
+    </script>
+</body>
+</html>

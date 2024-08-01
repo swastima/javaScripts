@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <button onmouseover="demo()" onmouseout="previous()">Click For Date</button>
+    <h2 id="heading"></h2>
+    <script>
+        //oneclick, ondoubleclick, onsubmit ,onmouseover, onmouseout, onchange, onkeyup, onkeydown, onpageload
+
+        const demo=()=>{
+            document.querySelector('#heading').innerHTML= new Date()
+        }
+        const previous=()=>{
+            document.querySelector('h2').innerHTML=''
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onkeyup</title>
+</head>
+<body>
+    <input type="password" name="pwd" class="pwd" >
+    <!-- for id -->
+    <!-- <h2 id="result"></h2> -->
+
+    <!-- for class --> 
+     <!-- index is start from 0 -->
+
+      <!-- indext 0 = [0] -->
+     <h2 class="demo"></h2>
+     <!-- index 1 =[1] -->
+     <h3 class="demo"></h3>
+     <!-- [2] -->
+     <h4 class="dmeo"></h4>
+    <script>
+        const pwdInput = document.querySelector('#pwd')
+        // function demofunction(){
+        //     document.getElementById('result').innerHTML=pwdInput.value
+        // }
+        // document.getElementById('result').innerHTML=pwdInput.value
+
+
+        // short method
+
+        // document.addEventListener('keyup',()=>{
+        //     document.getElementById('result').innerHTML=pwdInput.value
+        //     document.getElementById('result').style.backgroundColor='red'
+        //     document.getElementById('result').style.textAlign='center'
+        // })
+
+        // for class 
+
+        
+        document.addEventListener('keyup',()=>{
+            document.getElementsByClassName('demo')[2].innerHTML=pwdInput.value
+            document.getElementsByClassName('demo')[2].style.backgroundColor='red'
+            document.getElementsByClassName('demo')[2].style.textAlign='center'
+        })
+
+
+    </script>
+</body>
+</html>

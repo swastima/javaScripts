@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loop/iteration/repetation</title>
+</head>
+<body>
+    <pre>
+        i>   for loop
+        ii>  while loop
+        iii> do while loop
+        iv>  for in loop
+        v>   for of loop
+
+    </pre>
+    <script>
+        // for loop
+        // for(i=1; i<=10; i+=3){
+        //     document.write(`${i}&nbsp;`)
+        // }
+
+        // while loop
+        // let x=1
+        // while(x<=10){
+        //     document.write(`${x} &nbsp;`)
+        //     x+=2
+        // }
+
+        // do while loop
+        let a = 1
+        do{
+            document.write(`${a}<br>`)
+            a+=1
+        } while(a<=10)
+
+        // nested loop
+        // for(i=1; i<=5; i++){
+        //     for(j=i; j<=10; j++){
+        //         document.write(`${i}x${j}=${i*j} <br>`)
+        //     }
+        //     document.write("<hr>")
+        // }
+
+        // for in loop
+        const student ={
+            'fname':'susan',
+            'lname':'bhandari',
+            'age' :50           
+        }
+        fruits=['apple','banana']
+
+        for( detail in student){
+            document.write(`${student[detail]}<br>`)
+        }
+        for(category in fruits){
+            document.write(`${fruits[category]}<br>`)
+        }
+        for(name of fruits){
+            document.write(`${name}<br>`)
+        }
+
+        // for loop inside while loop
+        // while loop inside while loop
+        // while loop inside for loop
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string methods</title>
+</head>
+<body>
+    <script>
+        const text='we arre studing javascript programming language and javascript is used for interactivce web pages.'
+
+
+        document.write(`${text}<br>`)
+        document.write(`${text [1]}<br>`)
+
+        // length gives the total number of character present in string
+        document.write(`${text.length}<br>`)
+        // toUppercase
+        // tpLowercase
+        document.write(`${text.toUpperCase()}<br>`)
+
+        // 
+        // indexof()---gives the index of particular word
+        document.write(`${text.indexOf('javascript')}<br>`)
+        // search()
+        document.write(`${text.search('javascript')}<br>`)
+        // lastindexof()
+        document.write(`${text.lastIndexOf('javascript')}<br>`)
+        // split is used to replace the word by comma giving space
+        document.write(`${text.split('and')}<br>`)
+
+        // substring => certain part of string 
+        // slice(start, end)       
+        // substring(start, end)
+        // substr(start, length)
+
+        document.write(`${text.slice(1,20)}<br>`)
+        document.write(`${text.substring(1,20)}<br>`)
+        document.write(`${text.substr(5,20)}<br>`)
+
+        // replace()
+        document.write(`${text.replace('javascript','js')}<br>`)
+        document.write(`${text.replaceAll('javascript','js')}<br>`)
+
+        // includes() check wheather true or false
+        document.write(`${text.includes('javascript')}<br>`)
+
+        // trim()
+        const test='     hello world     '
+        document.write(`${test.trim()}`)
+
+
+
+
+
+    </script>
+</body>
+</html>
